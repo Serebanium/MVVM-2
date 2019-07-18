@@ -17,7 +17,14 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel?.age.bind { [unowned self] in
+            guard let string = $0 else { return }
+            self.detailLabel.text = string
+        }
+        
+        delay(delay: 5) { [unowned self] in
+            self.viewModel?.age.value = "some new value"
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,14 +35,10 @@ class DetailViewController: UIViewController {
         self.detailLabel.text = viewModel.description
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func delay(delay: Double, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(wallDeadline: .now() + delay) {
+            closure()
+        }
     }
-    */
 
 }

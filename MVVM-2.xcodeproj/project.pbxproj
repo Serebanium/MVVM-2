@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E80054A22E03D5F009AF077 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80054922E03D5F009AF077 /* Box.swift */; };
 		3E8CFB4822DDA5480093C016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CFB4722DDA5480093C016 /* AppDelegate.swift */; };
 		3E8CFB4D22DDA5480093C016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CFB4B22DDA5480093C016 /* Main.storyboard */; };
 		3E8CFB4F22DDA54F0093C016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CFB4E22DDA54F0093C016 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E80054922E03D5F009AF077 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		3E8CFB4422DDA5480093C016 /* MVVM-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8CFB4722DDA5480093C016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E8CFB4C22DDA5480093C016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,10 +78,11 @@
 				3E8CFB6522DE1DD80093C016 /* ViewModel */,
 				3E8CFB6622DE1E0B0093C016 /* Protocols */,
 				3E8CFB6022DDC5350093C016 /* View */,
-				3E8CFB4B22DDA5480093C016 /* Main.storyboard */,
-				3E8CFB4E22DDA54F0093C016 /* Assets.xcassets */,
 				3E8CFB4722DDA5480093C016 /* AppDelegate.swift */,
+				3E80054922E03D5F009AF077 /* Box.swift */,
+				3E8CFB4B22DDA5480093C016 /* Main.storyboard */,
 				3E8CFB5022DDA54F0093C016 /* LaunchScreen.storyboard */,
+				3E8CFB4E22DDA54F0093C016 /* Assets.xcassets */,
 				3E8CFB5322DDA54F0093C016 /* Info.plist */,
 			);
 			path = "MVVM-2";
@@ -203,6 +206,7 @@
 				3E8CFB5C22DDA7660093C016 /* Profile.swift in Sources */,
 				3E8CFB5A22DDA6D10093C016 /* TableViewController.swift in Sources */,
 				3E8CFB6A22DE24F10093C016 /* TableViewCellViewModel.swift in Sources */,
+				3E80054A22E03D5F009AF077 /* Box.swift in Sources */,
 				3E8CFB7022DE32900093C016 /* DetailViewModel.swift in Sources */,
 				3E8CFB6422DE1D310093C016 /* TableViewModelType.swift in Sources */,
 			);
